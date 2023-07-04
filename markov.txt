@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script type='text/javascript' src='tracery.js' ></script>    
+  <style></style>
+</head>
+ <body>
+	<button id="gen_button">Generate</button>
+	<div id="content"></div>
+<script>
+'use strict';
+var myRules = [];
+document.getElementById("gen_button").addEventListener("click", function() {
+   let genContent = document.createElement("p");
+   genContent.innerHTML = outputText;
+   document.getElementById("content").appendChild(genContent);
+});
+</script>
+</body>
+</html>
